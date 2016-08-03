@@ -1,7 +1,35 @@
 angular.module 'myappAngular'
-  .controller 'MainController', ($timeout, webDevTec, toastr, Article) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, Article, Auth) ->
     'ngInject'
     vm = this
+    credentials =
+      email: 'asd@asd.asd'
+      password: 'asdasd'
+
+    vm.login = ->
+      Auth.login(credentials).then(
+        (user) ->
+          console.log user
+        (error) ->
+          console.log error
+      )
+    vm.logout = ->
+      Auth.logout().then(
+        (oldUser) ->
+          console.log oldUser
+        (error) ->
+          console.log error
+      )
+    vm.currentUser = ->
+      Auth.currentUser().then(
+        (oldUser) ->
+          console.log oldUser
+        (error) ->
+          console.log error
+      )
+    vm.isAuthenticated = ->
+      console.log Auth.isAuthenticated()
+
     activate = ->
       getWebDevTec()
       $timeout (->

@@ -10,4 +10,5 @@ angular.module 'myappAngular',
   'ui.router',
   'ui.bootstrap',
   'toastr',
+  'Devise',
 ]

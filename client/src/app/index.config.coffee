@@ -1,5 +1,5 @@
 angular.module 'myappAngular'
-  .config ($logProvider, toastrConfig) ->
+  .config ($logProvider, toastrConfig, AuthProvider) ->
     'ngInject'
     # Enable log
     $logProvider.debugEnabled true
@@ -9,3 +9,5 @@ angular.module 'myappAngular'
     toastrConfig.positionClass = 'toast-top-right'
     toastrConfig.preventDuplicates = true
     toastrConfig.progressBar = true
+    AuthProvider.loginPath 'http://localhost:3004/users/sign_in.json'
+    AuthProvider.logoutPath 'http://localhost:3004/users/sign_out.json'
