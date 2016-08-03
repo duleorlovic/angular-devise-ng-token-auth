@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if current_user %>
+    <strong><%= current_user.email %></strong>
+    <a href="<%= destroy_user_session_path %>" data-method="delete">Sign out<a>
+  <% else %>
+    <a href="<%= new_user_registration_path %>">Sign up</a>
+    <a href="<%= new_user_session_path %>">Log in</a>
+  <% end %>
 <% flash.each do |key, value| -%>
   <div class="flash-<%= key %>"><%= value %></div>
 <% end %>
