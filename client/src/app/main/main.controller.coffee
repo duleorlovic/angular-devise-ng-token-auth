@@ -48,6 +48,12 @@ angular.module 'myappAngular'
 
 
     showToastr = ->
+      #ArticleResource.query().then(
+      #  (res) ->
+      #    vm.articles = res
+      #  (error) ->
+      #    console.log error
+      #)
       Article.query (res) ->
         vm.articles = res
       toastr.info 'Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>'

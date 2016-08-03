@@ -10,4 +10,4 @@ angular.module 'myappAngular'
     toastrConfig.preventDuplicates = true
     toastrConfig.progressBar = true
     $authProvider.configure
-      apiUrl: 'http://localhost:3004/api/v1'
+      apiUrl: 'http://localhost:3004'
