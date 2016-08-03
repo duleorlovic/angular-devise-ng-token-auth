@@ -1,5 +1,5 @@
 angular.module 'myappAngular'
-  .controller 'MainController', ($timeout, webDevTec, toastr, Article, $auth) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, Article, ArticleResource, $auth) ->
     'ngInject'
     vm = this
     activate = ->

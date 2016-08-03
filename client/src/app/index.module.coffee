@@ -11,4 +11,5 @@ angular.module 'myappAngular',
   'ui.bootstrap',
   'toastr',
   'ng-token-auth',
+  'rails',
 ]
