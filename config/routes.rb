@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  mount_devise_token_auth_for 'User', at: 'auth'
+  mount_devise_token_auth_for 'User', at: 'api/v1/auth'
   resources :articles
   # devise_for :users
   get 'pages/index'
