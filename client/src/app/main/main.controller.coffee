@@ -1,5 +1,5 @@
 angular.module 'myappAngular'
-  .controller 'MainController', ($timeout, webDevTec, toastr) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, Article) ->
     'ngInject'
     vm = this
     activate = ->
@@ -11,6 +11,8 @@ angular.module 'myappAngular'
       return
 
     showToastr = ->
+      Article.query (res) ->
+        vm.articles = res
       toastr.info 'Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>'
       vm.classAnimation = ''
       return
