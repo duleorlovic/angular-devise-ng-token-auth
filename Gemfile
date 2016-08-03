@@ -60,3 +60,7 @@ gem "neat"
 
 gem 'devise'
 gem 'rack-cors', require: 'rack/cors'
+# user auth with devise and ng-token-auth
+gem 'devise_token_auth', '=0.1.37.beta4' # fix version because of url localhost:3000//api/ issue
+# github: 'lynndylanhurley/devise_token_auth'
+gem 'omniauth'
