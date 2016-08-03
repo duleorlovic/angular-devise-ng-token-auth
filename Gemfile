@@ -59,3 +59,4 @@ gem "bourbon"
 gem "neat"
 
 gem 'devise'
+gem 'rack-cors', require: 'rack/cors'
