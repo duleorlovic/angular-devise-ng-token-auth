@@ -61,5 +61,5 @@ gem "neat"
 gem 'devise'
 gem 'rack-cors', require: 'rack/cors'
 
-gem 'angular_rails_csrf'
+# gem 'angular_rails_csrf'
 
