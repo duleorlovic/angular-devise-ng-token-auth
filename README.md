@@ -6,7 +6,7 @@ There are two approaches for authentication
 * [ng-token-auth](https://github.com/lynndylanhurley/ng-token-auth)
 
 This is just demonstration how to use it. Installing commands you can find on
-[my-blog](http://blog.trk.in.rs/2015/12/20/devise-oauth-angular/#tocAnchor-1-6)
+[my-blog](http://blog.trk.in.rs/2015/12/20/devise-oauth-angular/#tocAnchor-1-8)
 
 # Server
 
