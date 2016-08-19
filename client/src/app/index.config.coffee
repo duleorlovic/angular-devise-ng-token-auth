@@ -12,3 +12,4 @@ angular.module 'myappAngular'
     AuthProvider.loginPath 'http://localhost:3004/users/sign_in.json'
     AuthProvider.logoutPath 'http://localhost:3004/users/sign_out.json'
     $httpProvider.defaults.withCredentials = true
+    $httpProvider.interceptors.unshift 'csrfInterceptor'
